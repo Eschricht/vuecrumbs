@@ -1,84 +1,93 @@
-<!--
-Get your module up and running quickly.
+# Vuecrumbs Nuxt Module
 
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
-- Package name: my-module
-- Description: My new Nuxt module
--->
+Vuecrumbs Nuxt Module provides seamless integration of Vuecrumbs with Nuxt.js, allowing you to manage and display breadcrumbs effortlessly in your Nuxt applications.
 
-# My Module
+## ✨ Features
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
+- 🥖 Easy integration with Nuxt.js
+- 🧩 Customizable breadcrumb structure
+- 🔗 Supports dynamic routes
+- ⚡ Lightweight and performant
 
-My new Nuxt module for doing amazing things.
+## 📦 Installation
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
-
-## Features
-
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
-
-## Quick Setup
-
-Install the module to your Nuxt application with one command:
+Install the Vuecrumbs Nuxt Module using npm or pnpm:
 
 ```bash
-npx nuxi module add my-module
+npm install @vuecrumbs/nuxt
+# or
+pnpm add @vuecrumbs/nuxt
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+## 🚀 Getting Started
 
+### Setup
 
-## Contribution
+Add the Vuecrumbs module to your `nuxt.config.ts`:
 
-<details>
-  <summary>Local development</summary>
-  
-  ```bash
-  # Install dependencies
-  npm install
-  
-  # Generate type stubs
-  npm run dev:prepare
-  
-  # Develop with the playground
-  npm run dev
-  
-  # Build the playground
-  npm run dev:build
-  
-  # Run ESLint
-  npm run lint
-  
-  # Run Vitest
-  npm run test
-  npm run test:watch
-  
-  # Release new version
-  npm run release
-  ```
+```ts
+export default defineNuxtConfig({
+  modules: ['@vuecrumbs/nuxt'],
+})
+```
 
-</details>
+### Usage
 
+Use the `useVuecrumbs` composable in your Nuxt pages or components:
 
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/my-module
+```vue
+<script setup lang="ts">
+const breadcrumbs = useVuecrumbs()
+</script>
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npm.chart.dev/my-module
+<template>
+  <!-- Example usage -->
+  <div>
+    <nav>
+      <ul>
+        <li v-for="crumb in breadcrumbs" :key="crumb.to">
+          <NuxtLink :to="crumb.to">{{ crumb.label }}</NuxtLink>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</template>
+```
 
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/my-module
+### Extending Breadcrumb Meta Data with `definePageMeta`
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
-[nuxt-href]: https://nuxt.com
+You can extend the breadcrumb meta data for your pages using the `definePageMeta` function. This allows you to customize the breadcrumb labels, icons, and other properties dynamically.
+
+```vue
+<script setup lang="ts">
+definePageMeta({
+  breadcrumb: route => ({
+    label: `Page - ${route.params.id}`,
+    icon: 'i-page',
+  }),
+})
+</script>
+<template>
+  <div>
+    Dynamic Page Content
+  </div>
+</template>
+```
+
+## 📄 License
+
+Vuecrumbs Nuxt Module is licensed under the [MIT License](../../LICENSE).
+
+## 🙌 Contributing
+
+Contributions are welcome! Please read our [contributing guidelines](../../CONTRIBUTING.md) first.
+
+## 📞 Support
+
+If you have any questions or need help, feel free to open an issue.
+
+---
+
+For more detailed information on the core functionality of Vuecrumbs, please refer to the [Core README](../core/README.md).
+
+Happy coding with Vuecrumbs! 🥖✨
