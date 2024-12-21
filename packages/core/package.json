@@ -1,5 +1,5 @@
 {
-  "name": "vuecrumbs",
+  "name": "crumby-vue",
   "version": "0.0.0",
   "exports": {
     ".": {

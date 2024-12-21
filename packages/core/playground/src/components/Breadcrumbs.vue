@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useBreadcrumbs } from 'vuecrumbs'
+import { useBreadcrumbs } from 'crumby-vue'
 
 const crumbs = useBreadcrumbs({
   prependWith: '/',

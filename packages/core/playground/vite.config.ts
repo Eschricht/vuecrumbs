@@ -11,8 +11,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      'vuecrumbs': fileURLToPath(new URL('../src', import.meta.url)),
-      'vuecrumbs/routeMeta': fileURLToPath(new URL('../routeMeta.d.ts', import.meta.url)),
+      'crumby-vue': fileURLToPath(new URL('../src', import.meta.url)),
+      'crumby-vue/routeMeta': fileURLToPath(new URL('../routeMeta.d.ts', import.meta.url)),
     },
   },
 })

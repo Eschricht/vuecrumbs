@@ -1,5 +1,5 @@
 <script setup>
-const test = useVuecrumbs({
+const test = usecrumby-vue({
   prependWith: ['/'],
 })
 </script>

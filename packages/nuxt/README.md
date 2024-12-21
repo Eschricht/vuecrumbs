@@ -1,6 +1,6 @@
-# Vuecrumbs Nuxt Module
+# crumby-vue Nuxt Module
 
-Vuecrumbs Nuxt Module provides seamless integration of Vuecrumbs with Nuxt.js, allowing you to manage and display breadcrumbs effortlessly in your Nuxt applications.
+crumby-vue Nuxt Module provides seamless integration of crumby-vue with Nuxt.js, allowing you to manage and display breadcrumbs effortlessly in your Nuxt applications.
 
 ## ✨ Features
 
@@ -11,33 +11,33 @@ Vuecrumbs Nuxt Module provides seamless integration of Vuecrumbs with Nuxt.js, a
 
 ## 📦 Installation
 
-Install the Vuecrumbs Nuxt Module using npm or pnpm:
+Install the crumby-vue Nuxt Module using npm or pnpm:
 
 ```bash
-npm install @vuecrumbs/nuxt
+npm install @crumby-vue/nuxt
 # or
-pnpm add @vuecrumbs/nuxt
+pnpm add @crumby-vue/nuxt
 ```
 
 ## 🚀 Getting Started
 
 ### Setup
 
-Add the Vuecrumbs module to your `nuxt.config.ts`:
+Add the crumby-vue module to your `nuxt.config.ts`:
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@vuecrumbs/nuxt'],
+  modules: ['@crumby-vue/nuxt'],
 })
 ```
 
 ### Usage
 
-Use the `useVuecrumbs` composable in your Nuxt pages or components:
+Use the `usecrumby-vue` composable in your Nuxt pages or components:
 
 ```vue
 <script setup lang="ts">
-const breadcrumbs = useVuecrumbs()
+const breadcrumbs = usecrumby-vue()
 </script>
 
 <template>
@@ -76,7 +76,7 @@ definePageMeta({
 
 ## 📄 License
 
-Vuecrumbs Nuxt Module is licensed under the [MIT License](../../LICENSE).
+crumby-vue Nuxt Module is licensed under the [MIT License](../../LICENSE).
 
 ## 🙌 Contributing
 
@@ -88,6 +88,6 @@ If you have any questions or need help, feel free to open an issue.
 
 ---
 
-For more detailed information on the core functionality of Vuecrumbs, please refer to the [Core README](../core/README.md).
+For more detailed information on the core functionality of crumby-vue, please refer to the [Core README](../core/README.md).
 
-Happy coding with Vuecrumbs! 🥖✨
+Happy coding with crumby-vue! 🥖✨

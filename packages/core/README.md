@@ -1,6 +1,6 @@
-# Vuecrumbs
+# crumby-vue
 
-Vuecrumbs Core is a lightweight and flexible breadcrumb management utility for Vue.js applications. It provides a simple way to manage and display breadcrumbs in your Vue projects, supporting both static and dynamic routes.
+crumby-vue Core is a lightweight and flexible breadcrumb management utility for Vue.js applications. It provides a simple way to manage and display breadcrumbs in your Vue projects, supporting both static and dynamic routes.
 
 ## ✨ Features
 
@@ -11,12 +11,12 @@ Vuecrumbs Core is a lightweight and flexible breadcrumb management utility for V
 
 ## 📦 Installation
 
-Install Vuecrumbs Core using npm or pnpm:
+Install crumby-vue Core using npm or pnpm:
 
 ```bash
-npm install vuecrumbs
+npm install crumby-vue
 # or
-pnpm add vuecrumbs
+pnpm add crumby-vue
 ```
 
 ## 🚀 Getting Started
@@ -27,7 +27,7 @@ First, import and use the `useBreadcrumbs` composable in your Vue component:
 
 ```vue
 <script setup lang="ts">
-import { useBreadcrumbs } from 'vuecrumbs'
+import { useBreadcrumbs } from 'crumby-vue'
 
 const breadcrumbs = useBreadcrumbs()
 </script>
@@ -101,7 +101,7 @@ For dynamic routes, use a function to generate breadcrumb labels based on route 
 
 ## 📄 License
 
-Vuecrumbs Core is licensed under the [MIT License](../../LICENSE).
+crumby-vue Core is licensed under the [MIT License](../../LICENSE).
 
 ## 🙌 Contributing
 
@@ -113,4 +113,4 @@ If you have any questions or need help, feel free to open an issue.
 
 ---
 
-Happy coding with Vuecrumbs! 🥖✨
+Happy coding with crumby-vue! 🥖✨

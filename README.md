@@ -1,6 +1,6 @@
-# Vuecrumbs
+# crumby-vue
 
-Vuecrumbs is a breadcrumb management utility for Vue applications.
+crumby-vue is a breadcrumb management utility for Vue applications.
 
 ## ✨ Features
 
@@ -13,12 +13,12 @@ Vuecrumbs is a breadcrumb management utility for Vue applications.
 
 Vuecrumbs consists of the following packages:
 
-- [Core](./packages/core/README.md): The core functionality of Vuecrumbs.
+- [Core](./packages/core/README.md): The core functionality of crumby-vue.
 - [Nuxt](./packages/nuxt/README.md): Integration with Nuxt.js.
 
 ## 📄 License
 
-Vuecrumbs is licensed under the [MIT License](./LICENSE).
+crumby-vue is licensed under the [MIT License](./LICENSE).
 
 ## 🙌 Contributing
 

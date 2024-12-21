@@ -1,2 +1,2 @@
 /// <reference types="vite/client" />
-/// <reference types="vuecrumbs/routeMeta" />
+/// <reference types="crumby-vue/routeMeta" />

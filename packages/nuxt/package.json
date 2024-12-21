@@ -1,7 +1,7 @@
 {
-  "name": "@vuecrumbs/nuxt",
+  "name": "@crumby-vue/nuxt",
   "version": "0.0.0",
-  "description": "vuecrumbs Nuxt module",
+  "description": "crumby-vue Nuxt module",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.14.0",
-    "vuecrumbs": "workspace:*"
+    "crumby-vue": "workspace:*"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.6.0",
